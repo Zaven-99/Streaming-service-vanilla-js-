@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Выбор пола</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleStart.css">
+  <link rel="stylesheet" href="mediaStart.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="logoBlock">
+    <img class = 'logo' src="../image/logo1.jpg" alt="">
+  </div>
+  <h1>Кто вы ?</h1>
+  <div class="block" id="male">Мужчина</div>
+  <div class="block" id="female">Женщина</div>
+</div>
+
+  <script>
+    const maleBlock = document.getElementById('male');
+    const femaleBlock = document.getElementById('female');
+
+    maleBlock.addEventListener('click', function() {
+      window.location.href = '../ChooseBarbers/barberForMan.html';
+    });
+
+    femaleBlock.addEventListener('click', function() {
+      window.location.href = '../ChooseBarbers/barberForWoman.html';
+    });
+  </script>
+</body>
+</html>
