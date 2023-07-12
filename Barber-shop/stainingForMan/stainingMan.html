@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Виды окрашивании</title>
+    <link rel="stylesheet" href="styleStainingMan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mediaStainingMan.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class = 'list'><a href="../ForMan/man.html">Назад</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Виды окрашивании</h1>
+      <div class="services-container">
+        <div class="service-item">
+          <img class = 'image' src="../image/stainingMan/pexels-ralph-rabago-3214807.jpg" alt="Укладка 1">
+          <h2>окрашивание 1</h2>
+          <p>Описание окрашивании 1.</p>
+          <span class = 'price' >стоймость - 1000 руб.</span>
+          <button onclick="callSalon()">Записаться</button> 
+        </div>
+        <div class="service-item">
+          <img class = 'image' src="../image/stainingMan/pexels-ralph-rabago-3214807.jpg" alt="Укладка 2">
+          <h2>окрашивание 2</h2>
+          <p>Описание окрашивании 2.</p>
+          <span class = 'price' >стоймость - 1000 руб.</span>
+          <button onclick="callSalon()">Записаться</button> 
+        </div>
+        <div class="service-item">
+          <img class = 'image' src="../image/stainingMan/pexels-ralph-rabago-3214807.jpg" alt="Укладка 3">
+          <h2>окрашивание 3</h2>
+          <p>Описание окрашивании 3.</p>
+          <span class = 'price' >стоймость - 1000 руб.</span>
+          <button onclick="callSalon()">Записаться</button> 
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023, Все права защищены.</p>
+    </footer>
+
+    <!--Scripts-->
+    <script>
+      function callSalon() {
+        const phoneNumber = '+123456789'; // здесь можно указать номер телефона салона
+        window.location.href = 'tel:' + phoneNumber;
+      }
+      </script>
+  </body>
+</html>
