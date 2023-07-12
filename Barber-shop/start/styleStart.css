@@ -1,0 +1,47 @@
+body{
+  font-family: 'Play', sans-serif;
+  
+}
+a{
+  text-decoration:none;
+  color:black
+}
+
+.block {
+  background-color: black;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 350px;
+  height: 80px;
+  background-color: black;
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.block:hover {
+  background-color:grey;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.logo{
+  padding-bottom: 30px;
+}
+.wrap{
+text-align: center;
+margin-top: 15%;
+height:max-content;
+}
+.logo{
+width:200px ;
+}
+h1{
+  text-align: center;
+}
