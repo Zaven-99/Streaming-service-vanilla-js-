@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Виды Стрижок</title>
+    <link rel="stylesheet" href="styleHairCutMan.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mediaHaircutMan.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class = 'list'><a href="../ForMan/man.html">Назад</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <h1>Виды Стрижок</h1>
+      <div class="services-container">
+        <div class="service-item">
+          <img src="../image/haircutMan/haircut1.jpg" alt="Укладка 1">
+          <h2>стрижка 1</h2>
+          <p>Описание стрижки 1.</p>
+          <span class = 'price' >стоймость - 1000 руб.</span>
+          <button onclick="callSalon()">Записаться</button> 
+        </div>
+        <div class="service-item">
+          <img src="../image/haircutMan/haircut2.jpg" alt="Укладка 2">
+          <h2>стрижка 2</h2>
+          <p>Описание стрижки 2.</p>
+          <span class = 'price' >стоймость - 1000 руб.</span>
+          <button onclick="callSalon()">Записаться</button> 
+        </div>
+        <div class="service-item">
+          <img src="../image/haircutMan/haircut2.jpg" alt="Укладка 3">
+          <h2>стрижка 3</h2>
+          <p>Описание стрижки 3.</p>
+          <span class = 'price' >стоймость - 1000 руб.</span>
+          <button onclick="callSalon()">Записаться</button> 
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023, Все права защищены.</p>
+    </footer>
+
+
+    <!--Scripts-->
+    <script>
+      function callSalon() {
+        const phoneNumber = '+123456789'; // здесь можно указать номер телефона салона
+        window.location.href = 'tel:' + phoneNumber;
+      }
+      </script>
+  </body>
+</html>
