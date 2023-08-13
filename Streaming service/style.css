@@ -371,6 +371,7 @@ margin-top:-40px;
 }
 .heart{
     cursor: pointer;
+    width: 30px;
 }
 .no{
     cursor: pointer;
@@ -526,7 +527,6 @@ margin-top:-40px;
     position: relative;
 }
 .addQueue{
-    color: tomato;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
     font-size: 15px;
