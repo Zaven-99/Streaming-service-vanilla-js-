@@ -1,0 +1,40 @@
+.chart2{
+    margin-bottom: 50px;
+    margin-top: 15px;
+     
+    /* gap: 350px; */
+    border: 1px solid antiquewhite;
+    padding: 15px;
+    width: 720px;
+
+}
+
+.other-charts{
+    cursor: pointer;
+    border: 3px solid tomato;
+    border-radius: 5px;
+    padding: 10px;
+}
+.other-charts:hover .p-b_block__inner{
+    opacity: 0.5;
+    transition: 1s;
+    border:1px solid rgb(12, 144, 226);
+    border-radius:5px;
+    padding:5px;
+    background-color:rgb(12, 144, 226);
+}
+.track-wrapper{
+    width: 690px;
+ }
+.name_track {
+    margin-right: 350px;
+    margin-left: 15px;
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.main-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
