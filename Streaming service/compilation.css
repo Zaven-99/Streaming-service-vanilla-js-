@@ -1,0 +1,46 @@
+.main-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.moods{
+    color: tomato;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+}
+
+.moods-type{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.mood-type_item a{
+    color:black;
+    
+}
+.mood-type_item{
+    margin-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+.mood-type_item:hover{
+    opacity: .5;
+    transition: 1s;
+    
+}
+.main-genre{
+    font-weight: bold;
+}
+.genre-item{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+}
+.genre-title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.genre{
+    margin-bottom: 50px;
+}
