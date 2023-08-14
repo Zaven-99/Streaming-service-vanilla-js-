@@ -14,6 +14,7 @@
     border: 3px solid tomato;
     border-radius: 5px;
     padding: 10px;
+    position: relative;
 }
 .other-charts:hover .p-b_block__inner{
     opacity: 0.5;
@@ -37,4 +38,18 @@
 .main-title{
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.icon-block{
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 23%;
+}
+
+
+.shuffle{
+    width: 35px;
+}
+#adds{
+    width: 40px;
 }
