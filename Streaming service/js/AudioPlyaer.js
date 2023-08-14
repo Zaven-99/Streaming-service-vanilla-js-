@@ -48,8 +48,9 @@ function volumeChangeImg() {
   volumeSlider.addEventListener("input", (event) => {
     const value = event.target.valueAsNumber;
     // currentValue.textContent = `${value}`;
-
-    if (value <= 35) {
+    if (value === 0) {
+      volumeIcon.src = "/img/icon/mute.png";
+    } else if (value <= 35) {
       volumeIcon.src = "/img/icon/low-volume.png";
     } else if (value <= 70) {
       volumeIcon.src = "/img/icon/medium-volume.png";
@@ -57,6 +58,39 @@ function volumeChangeImg() {
       volumeIcon.src = "/img/icon/volume.png";
     }
   });
+
+  let currentImagePath = volumeIcon.src;
+  volumeIcon.addEventListener("click", () => {
+    if (volumeIcon.src === currentImagePath) {
+      volumeIcon.src = "/img/icon/mute.png";
+    } else {
+      volumeIcon.src = currentImagePath;
+    }
+  });
 }
 
 volumeChangeImg();
+
+function iconsColor() {
+  let shuffle = document.querySelector(".shuffle_image"),
+    repeat = document.querySelector(".repeat_image");
+
+  let currentImagePath = shuffle.src;
+  shuffle.addEventListener("click", () => {
+    if (shuffle.src === currentImagePath) {
+      shuffle.src = "/img/icon/shuffle2.png";
+    } else {
+      shuffle.src = currentImagePath;
+    }
+  });
+
+  let currentImagePath1 = repeat.src;
+  repeat.addEventListener("click", () => {
+    if (repeat.src === currentImagePath1) {
+      repeat.src = "/img/icon/repeat2.png";
+    } else {
+      repeat.src = currentImagePath1;
+    }
+  });
+}
+iconsColor();
