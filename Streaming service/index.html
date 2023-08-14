@@ -120,7 +120,7 @@
                     <div data-iconBlock class="icon-block ">
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
                         <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
-                        <img class='icon play' src='/img/icon/play.png'></img>
+                        <img class='icon  playOpen' src='/img/icon/play.png'></img>
                         <img class='icon' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                     <div data-iconBlock class="icon-block">
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
                         <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
-                        <img class='icon play' src='/img/icon/play.png'></img>
+                        <img class='icon  playOpen' src='/img/icon/play.png'></img>
                         <img class='icon' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                     <div data-iconBlock class="icon-block">
                         <img data-icon class='icon heart' src="/img/icon/heart.png" alt="">
                         <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
-                        <img data-icon class='icon play' src='/img/icon/play.png'></img>
+                        <img data-icon class='icon playOpen ' src='/img/icon/play.png'></img>
                         <img data-icon class='icon share' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                 <div data-iconBlock class="icon-block_2">
                     <img data-icon class='icon heart iconInPod' src="/img/icon/heart.png" alt="">
                     <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
-                    <img data-icon class='icon play iconInPod' src='/img/icon/play.png'></img>
+                    <img data-icon class='icon  iconInPod playMusic' src='/img/icon/play.png'></img>
                     <img data-icon class='icon share iconInPod' src="/img/icon/tochki.png" alt="">
                 </div>
             </div>
@@ -178,7 +178,7 @@
                 <div class="podcast-items">
                     <div class="podcast-item">
                         <div class="podcast-item_wrap">
-                            <img data-icon class='iconInPod' src='/img/icon/play.png'></img>
+                            <img data-icon class='iconInPod playMusic' src='/img/icon/play.png'></img>
                             <div class="name ">Անվանում</div>
                             <div><img class='iconInPod-block heart' src="/img/icon/heart.png" alt=""></div>
                             <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
@@ -187,7 +187,7 @@
                     </div>
                     <div class="podcast-item">
                         <div class="podcast-item_wrap">
-                            <img data-icon class='iconInPod' src='/img/icon/play.png'></img>
+                            <img data-icon class='iconInPod playMusic' src='/img/icon/play.png'></img>
                             <div class="name ">Անվանում</div>
                             <div><img class='iconInPod-block heart' src="/img/icon/heart.png" alt=""></div>
                             <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
@@ -196,7 +196,7 @@
                     </div>
                     <div class="podcast-item">
                         <div class="podcast-item_wrap">
-                            <img data-icon class='iconInPod' src='/img/icon/play.png'></img>
+                            <img data-icon class='iconInPod playMusic' src='/img/icon/play.png'></img>
                             <div class="name ">Անվանում</div>
                             <div><img class='iconInPod-block heart' src="/img/icon/heart.png" alt=""></div>
                             <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
@@ -205,7 +205,7 @@
                     </div>
                     <div class="podcast-item">
                         <div class="podcast-item_wrap">
-                            <img data-icon class='iconInPod' src='/img/icon/play.png'></img>
+                            <img data-icon class='iconInPod playMusic' src='/img/icon/play.png'></img>
                             <div class="name ">Անվանում</div>
                             <div><img class='iconInPod-block heart' src="/img/icon/heart.png" alt=""></div>
                             <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
@@ -658,6 +658,57 @@
         </div>
         </div>
     </main>
+
+    <section>
+        <div class="AudioPlayer">
+            <div class="AudioPlayer-inner">
+                <div class="btn-block">
+                    <button class="back-button    button-items"><img src="/img/icon/rewind-button.png" alt=""></button>
+                    <button class="play-button    button-items"><img src="/img/icon/play-buttton.png" alt=""></button>
+                    <button class="pause-button   button-items"><img src="/img/icon/pause.png" alt=""></button>
+                    <button class="forward-button button-items"><img src="/img/icon/forward-button.png" alt=""></button>
+                </div>
+                <div class="nowPlaying">
+                    <div class="nowPlaying-album">
+                        <div class="album-img">
+                            <img src="/img/interestingNow/interesting1.jpg" alt="">
+                        </div>
+                        <div class="nowPlaying-name">
+                            <div class='song_name'><a href="#">Երգի անվանումը</a></div>
+                            <div class='artist-nickName'><a href="#">Կատարողի անունը</a></div>
+                        </div>
+                        <div class="block-for_icons">
+                            <div class="block-for_icons_inner">
+                                <div class="like icon2"><img class='heart' src="/img/icon/heart.png" alt=""></div>
+                                <div id='adds' class="add icon2"><img src="/img/icon/plus.jpg" alt=""></div>
+                                <div class="share2 icon2"><img src="/img/icon/share (1).png" alt=""></div>
+                                <div class="noRecomend icon2"><img class='iconInPod-block  no'
+                                        src="/img/icon/noRecomend1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="block-for_icons_inner2 ">
+                                <div class="shuffle icon2">
+                                    <img src="/img/icon/shuffle.png" alt="">
+                                </div>
+                                <div class="repeat icon2">
+                                    <img src="/img/icon/repeat.png" alt="">
+                                </div>
+
+                                <input class='vertical-slider' type="range" id="volume-slider" min="0" max="100"
+                                    value="50">
+                                <p id="current-value"></p>
+                                <img id="volume-icon" src="/img/icon/volume.png" alt="Volume Icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+
     <footer>
         <div class="footer-block">
             <div class="footer-left-wrap">
@@ -779,6 +830,7 @@
     <script src='/js/collaps.js'></script>
     <script src='/js/FooterLangSocial.js'></script>
     <script src='/js/likes.js'></script>
+    <script src='/js/AudioPlayer.js'></script>
 </body>
 
 </html>
