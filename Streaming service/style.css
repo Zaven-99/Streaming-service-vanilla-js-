@@ -276,7 +276,7 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
     font-size: 15px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 
@@ -692,6 +692,7 @@ margin-top:-40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 5px;
     font-size: 15px;
+     
   }
   .num-chart{
     margin-right: 15px;
@@ -1136,6 +1137,7 @@ margin-top:-40px;
 }
 #volume-icon{
     width: 30px;
+    cursor: pointer;
 }
 
 #adds{
