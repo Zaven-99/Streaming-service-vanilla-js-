@@ -302,6 +302,7 @@ header{
     border:3px solid tomato;
     border-radius:5px;
     padding: 10px;
+    position: relative;
 }
 
 .p-b_block__inner{
@@ -384,11 +385,19 @@ margin-top:-40px;
 }
 .share2{
     cursor: pointer;
+     
+}
+.share4{
+    width: 30px;
+    cursor: pointer;
+}
+.share4:hover{
+    width: 35px;
 }
 .block_audio-book{
-    height: 100vh;
-    width: 360px;
-    border: 3px solid rgb(12, 144, 226);
+    height: 80vh;
+    width: 370px;
+    /* border: 3px solid rgb(12, 144, 226); */
     border-radius: 5px;
     padding: 15px;
     position: fixed;
@@ -398,8 +407,9 @@ margin-top:-40px;
     z-index: 1;
     display: none;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y:scroll;
     border-color:transparent;
+    
 }
 
 
@@ -429,6 +439,7 @@ margin-top:-40px;
 .icon-block_2{
     cursor: pointer;
     margin-top: -100px;
+     
 }
  
 .podcast-items{
@@ -450,7 +461,7 @@ margin-top:-40px;
     gap: 10px;
     position: relative;
 }
-.podcast-item:hover ::before{
+.podcast-item_wrap:hover ::before{
     content: ''; /* Создаем пустой псевдоэлемент */
     position: absolute; /* Позиционируем псевдоэлемент */
     top: -6px; /* Сдвигаем вверх на толщину рамки */
@@ -461,12 +472,12 @@ margin-top:-40px;
     pointer-events: none; /* Позволяет событиям мыши проходить сквозь псевдоэлемент */
     z-index: -1; /* Помещаем псевдоэлемент под содержимое блока */
 }
-
+ 
 
 .iconInPod{
     margin-top: 10px;
     width: 30px;
-    
+    position: relative;
 }
 .iconInPod:hover{
     width: 35px;
@@ -474,6 +485,7 @@ margin-top:-40px;
 
 .iconInPod-block{
     width: 30px;
+    cursor: pointer;
      
 }
 .iconInPod-block:hover{
@@ -484,15 +496,89 @@ margin-top:-40px;
 
 
 .tabInPodcats{
-    border:3px solid rgb(12, 144, 226);
+    border:1px solid rgb(12, 144, 226);
     border-radius:5px;
     padding: 5px;
     display: none;
     background-color: white;
-    /* position: absolute; */
-     
+    position: absolute;
+    z-index: 1;
+     width: 320px;
+}
+.tabInPodcats.active-tab {
+    display: block; /* Показываем выбранный блок */
 }
 
+.modal-share.show {
+    /* Другие стили модального окна */
+    opacity: 1; /* Начальное состояние (прозрачность 0) */
+    animation: fadeIn 1s ease-out; /* Применение анимации fadeIn */
+    
+  }
+  .modal-share.hide{
+    opacity: 1;
+    animation: fadeOut 1s ease-out;
+  }
+
+.modal-share{
+    border:1px solid rgb(12, 144, 226);
+    border-radius:5px;
+    padding: 5px;
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+ 
+.tracks{
+    position: relative;
+}
+.modal-share.active-tab{
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0
+}
+
+.shareModal{
+    background-color:white;
+    width: 250px;
+    position: absolute; 
+    border:1px solid rgb(12, 144, 226);
+    border-radius:5px;
+    top: 225px;
+    z-index: 2;
+    right: 0;
+    display: none;
+}
+
+.addToPlaylist{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.share4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.addToPlaylistItem{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+}
+.shareIcon{
+    display: flex;
+    align-items:center;
+    gap: 15px;
+}
+.modalImg{
+    width: 35px;
+}
 /* Ваш CSS остается без изменений */
 
 /* Добавляем анимацию для появления модального окна */
@@ -547,6 +633,13 @@ margin-top:-40px;
     align-items:center;
     gap: 15px;
     margin-top: 10px;
+}
+.modal-block-podcast:hover{
+    border-radius:5px;
+    /* width: max-content; */
+    background-color:rgb(12, 144, 226);
+    padding: 5px;
+    transition: 1s;
 }
 .x{
     font-weight: 700;
@@ -623,8 +716,12 @@ margin-top:-40px;
 .chart_img{
     width: 70px;
 }
+ 
 .chart_heart{
-    width: 30px;
+    width: 35px;
+}
+.chart_heart:hover{
+    width: 40px
 }
 .name_track{
     margin-right: 15px;
@@ -637,7 +734,7 @@ margin-top:-40px;
 .play3{
     width: 35px;
     position: absolute;
-    left: 40px;
+    left: 42px;
     cursor:pointer;
     display: none;
 }
@@ -672,7 +769,7 @@ margin-top:-40px;
     border: 2px solid tomato;
     pointer-events: none;
     z-index: -1;
-     
+    
   }
    
   .title-chart{
@@ -703,6 +800,9 @@ margin-top:-40px;
     width: 10px;
   }
   .first_column{
+    width: 350px;
+  }
+  .second_column{
     width: 350px;
   }
 .chart_see{
@@ -959,6 +1059,7 @@ margin-top:-40px;
     bottom: 0px;
     background-color:hsla(0,0%,100%,.95);
     display: flex;
+    z-index: 2;
 }
 .AudioPlayer-inner{
     display: flex;
@@ -971,6 +1072,7 @@ margin-top:-40px;
     gap: 20px;
     align-items: center;
     position: relative;
+    width: 130px;
 }
  
 .pause-button{
@@ -990,6 +1092,7 @@ margin-top:-40px;
 .nowPlaying-album{
     display: flex;
     align-items:center;
+    height: 150px;
 }
 .nowPlaying{
     display: flex;
@@ -1037,6 +1140,7 @@ margin-top:-40px;
 .block-for_icons{
     display: flex;
     justify-content: space-between;
+    height: 150px;
 }
 .chart-wrap{
     margin-top: 50px;
@@ -1125,7 +1229,7 @@ margin-top:-40px;
 #volume-slider {
     width: 100%;
     position: absolute;
-    top: -160px;
+    top: -120px;
     left: 45px;
 }
 .vertical-slider {
@@ -1143,3 +1247,97 @@ margin-top:-40px;
 #adds{
 width: 40px;
 }
+.addModal{
+    background-color:aliceblue;
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+    border:transparent;
+    position: absolute;
+    top: -270px;
+    left: 510px;
+    display: none;
+}
+.bord{
+    border:1px solid antiquewhite;
+    border-radius:5px;
+    height: 250px;
+    padding: 10px;
+    /* position: relative; */
+}
+.favourite{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    align-items:center;
+    display: flex;
+}
+ 
+.plus{
+    width: 35px;
+}
+ 
+.vk {
+    width: 35px;
+}
+.vk:hover{
+    width: 40px;
+}
+.TikTok {
+    width: 35px;
+}
+.TikTok:hover{
+    width: 40px;
+}
+.telegramm {
+    width: 35px;
+}
+.telegramm:hover{
+    width: 40px;
+}
+.shareModal2-inner{
+    display: flex;
+    align-items:center;
+    width: 300px;
+    height: 50px;
+    background-color:aliceblue;
+    gap: 15px;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    left: 550px
+    
+}
+.shareModal2{
+    display: none;
+}
+input  {
+    font-size: 12px;
+     width: 200px;
+}
+.searchMusic{
+    position: absolute;
+    bottom:10px;
+    padding: 5px;
+}
+.shareModal3{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color:aliceblue;
+    position: absolute;
+    right: 13px;
+    bottom: 55px;
+    z-index: 1;
+    display: none;
+}
+.shareModal3-inner{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 15px;
+}
+.shareModal3.active {
+    display: block;
+  }
