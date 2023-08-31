@@ -35,10 +35,10 @@
         <div class="main-navigation">
             <h1 class='main-title'>Գլխավոր</h1>
             <ul class='about-music'>
-                <li class='about-music_navigation   menu-navigation active1'><a href="">Բոլորը</a></li>
-                <li class='about-music_navigation   menu-navigation'><a href="new.html">Նոր Թողարկումներ</a></li>
-                <li class='about-music_navigation   menu-navigation'><a href="chart.html">Չարթ</a></li>
-                <li class='about-music_navigation   menu-navigation'><a href="compilations.html">Ընտրանի</a></li>
+                <li class='about-music_navigation menu-navigation active1'><a href="index.html">Բոլորը</a></li>
+                <li class='about-music_navigation menu-navigation'><a href="new.html">Նոր Թողարկումներ</a></li>
+                <li class='about-music_navigation menu-navigation'><a href="chart.html">Չարթ</a></li>
+                <li class='about-music_navigation menu-navigation'><a href="compilations.html">Ընտրանի</a></li>
             </ul>
             <div class="favourite-music menu-navigation">
                 <h2 class='favourite-music_desc'>Լսեք Ձեր նախընտրած երաժշտությունը, որպեսզի մենք կարողանանք ձեզ ավելի
@@ -112,7 +112,7 @@
                 <h2 class='listen-dont_only__music'>Լսեք ոչ միայն երաժշտություն</h2>
             </div>
             <div class="podcastsAndBooks_block">
-                <div data-block class="p-b_block ">
+                <div data-block class="p-b_block">
                     <div class="p-b_block__inner">
                         <img src="/img/podcast/podcast1.jpeg" alt="">
                         <h1 class='title_podcast-or_book'>Անվանում</h1>
@@ -122,14 +122,14 @@
                             <span class='count' data-count='0'>0</span>
                         </div>
                     </div>
-                    <div data-iconBlock class="icon-block ">
+                    <div data-iconBlock class="icon-block">
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
                         <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
                         <img class='icon  playOpen' src='/img/icon/play.png'></img>
-                        <img class='icon' src="/img/icon/share.png" alt="">
+                        <img class='icon shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
-                <div data-block class="p-b_block ">
+                <div data-block class="p-b_block">
                     <div class="p-b_block__inner">
                         <img src="/img/podcast/podcast2.jpeg" alt="">
                         <h1 class='title_podcast-or_book'>Անվանում</h1>
@@ -143,7 +143,7 @@
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
                         <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
                         <img class='icon  playOpen' src='/img/icon/play.png'></img>
-                        <img class='icon' src="/img/icon/share.png" alt="">
+                        <img class='icon shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
                 <div data-block class="p-b_block">
@@ -160,7 +160,7 @@
                         <img data-icon class='icon heart' src="/img/icon/heart.png" alt="">
                         <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
                         <img data-icon class='icon playOpen ' src='/img/icon/play.png'></img>
-                        <img data-icon class='icon share' src="/img/icon/share.png" alt="">
+                        <img data-icon class='icon share shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
             </div>
@@ -174,9 +174,19 @@
                 <h3 class='description_audio-book'>Նկարագրություն</h3>
                 <div data-iconBlock class="icon-block_2">
                     <img data-icon class='icon heart iconInPod' src="/img/icon/heart.png" alt="">
-                    <!-- <img class = "icon heart2"  src="/img/heart2.png" alt=""> -->
                     <img data-icon class='icon  iconInPod playMusic' src='/img/icon/play.png'></img>
-                    <img data-icon class='icon share iconInPod' src="/img/icon/tochki.png" alt="">
+                    <img data-share class='icon share iconInPod' src="/img/icon/tochki.png" alt="">
+                    <div class="shareModal">
+                        <div class="addToPlaylistItem menu-navigation">
+                            <img class='modalImg' src="/img/icon/plus.jpg" alt="">
+                            <div class='addToPlaylist'>Ավելացնել երգացանկին</div>
+                        </div>
+                        <div class="shareIcon menu-navigation">
+                            <img class='modalImg' src="/img/icon/share (1).png" alt="">
+                            <div class='share4'>Կիսվել</div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="podcastWrap">
@@ -189,14 +199,31 @@
                             <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
                             <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt=""></div>
                         </div>
-                    </div>
-                    <div class="podcast-item">
-                        <div class="podcast-item_wrap">
-                            <img data-icon class='iconInPod playMusic' src='/img/icon/play.png'></img>
-                            <div class="name ">Անվանում</div>
-                            <div><img class='iconInPod-block heart' src="/img/icon/heart.png" alt=""></div>
-                            <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
-                            <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt=""></div>
+                        <div class="tabInPodcats">
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner  iconInPod-block">
+                                    <img src="/img/icon/adds.png " alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել հերթում</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block">
+                                    <img src="/img/icon/plus.jpg" alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել երգացանկին</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block share3">
+                                    <img src="/img/icon/share.png" alt="">
+                                </div>
+                                <div class="addQueue ">Կիսվել</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block ">
+                                    <img class='heart' src="img/icon/heart.png" alt="">
+                                </div>
+                                <div class="addQueue ">Բաժանորդագրվել պոդկաստին</div>
+                            </div>
                         </div>
                     </div>
                     <div class="podcast-item">
@@ -207,6 +234,32 @@
                             <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
                             <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt=""></div>
                         </div>
+                        <div class="tabInPodcats">
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner  iconInPod-block">
+                                    <img src="/img/icon/adds.png " alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել հերթում</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block">
+                                    <img src="/img/icon/plus.jpg" alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել երգացանկին</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block share3">
+                                    <img src="/img/icon/share.png" alt="">
+                                </div>
+                                <div class="addQueue ">Կիսվել</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block ">
+                                    <img class='heart' src="img/icon/heart.png" alt="">
+                                </div>
+                                <div class="addQueue ">Բաժանորդագրվել պոդկաստին</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="podcast-item">
                         <div class="podcast-item_wrap">
@@ -215,35 +268,71 @@
                             <div><img class='iconInPod-block heart' src="/img/icon/heart.png" alt=""></div>
                             <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
                             <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt=""></div>
+                        </div>
+                        <div class="tabInPodcats">
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner  iconInPod-block">
+                                    <img src="/img/icon/adds.png " alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել հերթում</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block">
+                                    <img src="/img/icon/plus.jpg" alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել երգացանկին</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block share3">
+                                    <img src="/img/icon/share.png" alt="">
+                                </div>
+                                <div class="addQueue ">Կիսվել</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block ">
+                                    <img class='heart' src="img/icon/heart.png" alt="">
+                                </div>
+                                <div class="addQueue ">Բաժանորդագրվել պոդկաստին</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="podcast-item">
+                        <div class="podcast-item_wrap">
+                            <img data-icon class='iconInPod playMusic' src='/img/icon/play.png'></img>
+                            <div class="name ">Անվանում</div>
+                            <div><img class='iconInPod-block heart' src="/img/icon/heart.png" alt=""></div>
+                            <div><img class='iconInPod-block  no' src="/img/icon/noRecomend1.png" alt=""></div>
+                            <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt=""></div>
+                        </div>
+                        <div class="tabInPodcats">
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner  iconInPod-block">
+                                    <img src="/img/icon/adds.png " alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել հերթում</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block">
+                                    <img src="/img/icon/plus.jpg" alt="">
+                                </div>
+                                <div class="addQueue ">Ավելացնել երգացանկին</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block share3">
+                                    <img src="/img/icon/share.png" alt="">
+                                </div>
+                                <div class="addQueue ">Կիսվել</div>
+                            </div>
+                            <div class="modal-block-podcast menu-navigation">
+                                <div class="modal-icon-inner iconInPod-block ">
+                                    <img class='heart' src="img/icon/heart.png" alt="">
+                                </div>
+                                <div class="addQueue ">Բաժանորդագրվել պոդկաստին</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="tabInPodcats">
-                    <div class="modal-block-podcast">
-                        <div class="modal-icon-inner  iconInPod-block">
-                            <img src="/img/icon/adds.png " alt="">
-                        </div>
-                        <div class="addQueue menu-navigation">Ավելացնել հերթում</div>
-                    </div>
-                    <div class="modal-block-podcast ">
-                        <div class="modal-icon-inner iconInPod-block">
-                            <img src="/img/icon/plus.jpg" alt="">
-                        </div>
-                        <div class="addQueue menu-navigation">Ավելացնել երգացանկին</div>
-                    </div>
-                    <div class="modal-block-podcast">
-                        <div class="modal-icon-inner iconInPod-block share3">
-                            <img src="/img/icon/share.png" alt="">
-                        </div>
-                        <div class="addQueue menu-navigation">Կիսվել</div>
-                    </div>
-                    <div class="modal-block-podcast">
-                        <div class="modal-icon-inner iconInPod-block ">
-                            <img class='heart' src="img/icon/heart.png" alt="">
-                        </div>
-                        <div class="addQueue menu-navigation">Բաժանորդագրվել պոդկաստին</div>
-                    </div>
-                </div>
+
             </div>
         </div>
         <div class="new-release">
@@ -263,13 +352,13 @@
                             <span class='count' data-count='0'>0</span>
                         </div>
                     </div>
-                    <div data-iconBlock class="icon-block ">
+                    <div data-iconBlock class="icon-block">
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img class='icon play2' src='/img/icon/play.png'></img>
-                        <img class='icon' src="/img/icon/share.png" alt="">
+                        <img class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img class='icon shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
-                <div data-block class="p-b_block ">
+                <div data-block class="p-b_block">
                     <div class="p-b_block__inner">
                         <img src="/img/new/new2.jpeg" alt="">
                         <h1 class='title_podcast-or_book'>Անվանում</h1>
@@ -281,8 +370,8 @@
                     </div>
                     <div data-iconBlock class="icon-block">
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img class='icon play2' src='/img/icon/play.png'></img>
-                        <img class='icon' src="/img/icon/share.png" alt="">
+                        <img class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img class='icon shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
                 <div data-block class="p-b_block">
@@ -297,8 +386,8 @@
                     </div>
                     <div data-iconBlock class="icon-block">
                         <img data-icon class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img data-icon class='icon play2' src='/img/icon/play.png'></img>
-                        <img data-icon class='icon share' src="/img/icon/share.png" alt="">
+                        <img data-icon class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img data-icon class='icon share shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
             </div>
@@ -322,8 +411,8 @@
                     </div>
                     <div data-iconBlock class="icon-block ">
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img class='icon play2' src='/img/icon/play.png'></img>
-                        <img class='icon' src="/img/icon/share.png" alt="">
+                        <img class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img class='icon shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
                 <div data-block class="p-b_block ">
@@ -338,8 +427,8 @@
                     </div>
                     <div data-iconBlock class="icon-block">
                         <img class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img class='icon play2' src='/img/icon/play.png'></img>
-                        <img class='icon' src="/img/icon/share.png" alt="">
+                        <img class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img class='icon shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
                 <div data-block class="p-b_block">
@@ -354,8 +443,8 @@
                     </div>
                     <div data-iconBlock class="icon-block">
                         <img data-icon class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img data-icon class='icon play2' src='/img/icon/play.png'></img>
-                        <img data-icon class='icon share' src="/img/icon/share.png" alt="">
+                        <img data-icon class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img data-icon class='icon share shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
                 <div data-block class="p-b_block">
@@ -370,8 +459,8 @@
                     </div>
                     <div data-iconBlock class="icon-block">
                         <img data-icon class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img data-icon class='icon play2' src='/img/icon/play.png'></img>
-                        <img data-icon class='icon share' src="/img/icon/share.png" alt="">
+                        <img data-icon class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img data-icon class='icon share shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
                 <div data-block class="p-b_block">
@@ -386,8 +475,8 @@
                     </div>
                     <div data-iconBlock class="icon-block">
                         <img data-icon class='icon heart' src="/img/icon/heart.png" alt="">
-                        <img data-icon class='icon play2' src='/img/icon/play.png'></img>
-                        <img data-icon class='icon share' src="/img/icon/share.png" alt="">
+                        <img data-icon class='icon playMusic play2' src='/img/icon/play.png'></img>
+                        <img data-icon class='icon share shareOpen' src="/img/icon/share.png" alt="">
                     </div>
                 </div>
             </div>
@@ -400,178 +489,207 @@
         <div class="chart-wrap">
             <div class="chart">
                 <div class="first_column">
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>1</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+                    <div class="tracks"></div>
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper">
+                                <div class='num-chart'>1</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class=' share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>2</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
+                    <div class="tracks">
+                        <div class=" track">
+                            <div class="track-wrapper">
+                                <div class='num-chart'>2</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper">
+                                <div class='num-chart'>3</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class=' iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper">
+                                <div class='num-chart'>4</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img ' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>3</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+
+                    <div class="tracks last_track">
+                        <div class=" track ">
+                            <div class="track-wrapper last_track-wrapper">
+                                <div class='num-chart'>5</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>4</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>5</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+
                 <div class="second_column">
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>6</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper">
+                                <div class='num-chart'>6</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>7</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper">
+                                <div class='num-chart '>7</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>8</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper">
+                                <div class='num-chart'>8</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper">
-                            <div class='num-chart'>9</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper">
+                                <div class='num-chart'>9</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="winner_track track ">
-                        <div class="track-wrapper last_track-wrapper">
-                            <div class='num-chart'>10</div>
-                            <img class='chart_img' src="/img/winner/winner.jpg" alt="">
-                            <div class="name_track">
-                                Անվանում
-                            </div>
-                            <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
-                            <div class="icon-block_3">
-                                <div class="heart"><img data-icon class='chart_heart iconInPod-block heart'
-                                        src="/img/icon/heart.png" alt=""></div>
-                                <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
-                                <div class='share2'><img class='iconInPod-block ' src="/img/icon/tochki.png" alt="">
+                    <div class="tracks">
+                        <div class=" track ">
+                            <div class="track-wrapper last_track-wrapper">
+                                <div class='num-chart '>10</div>
+                                <img class='chart_img menu-navigation' src="/img/winner/winner.jpg" alt="">
+                                <div class="name_track">
+                                    Անվանում
+                                </div>
+                                <img data-icon class='play3' src='/img/icon/play_orange.png'></img>
+                                <div class="icon-block_3">
+                                    <div class="chart_heart"><img data-icon class='iconInPod-block heart'
+                                            src="/img/icon/heart.png" alt=""></div>
+                                    <div><img class='iconInPod-block no' src="/img/icon/noRecomend1.png" alt=""></div>
+                                    <div class='share4'><img class='share4-img' src="/img/icon/tochki.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="tracks"></div> -->
                 </div>
 
             </div>
@@ -686,10 +804,24 @@
                             <div class="block-for_icons_inner">
                                 <div class="like icon2"><img class='heart' src="/img/icon/heart.png" alt=""></div>
                                 <div id='adds' class="add icon2"><img src="/img/icon/plus.jpg" alt=""></div>
-                                <div class="share2 icon2"><img src="/img/icon/share (1).png" alt=""></div>
+                                <div class="addModal">
+                                    <div class="bord">
+                                        <div class="favourite menu-navigation">
+                                            <img class='plus' src="/img/icon/plus.jpg" alt="">
+                                            Ինձ դուր է գալիս
+                                        </div>
+
+                                        <input class='searchMusic' type="text" id="username" name="username"
+                                            placeholder="Ստեղծեք կամ գտեք երգացանկ" required>
+
+                                    </div>
+                                </div>
+                                <div data-share2 class=" icon2"><img src="/img/icon/share (1).png" alt=""></div>
+
                                 <div class="noRecomend icon2"><img class='iconInPod-block  no'
                                         src="/img/icon/noRecomend1.png" alt="">
                                 </div>
+
                             </div>
                             <div class="block-for_icons_inner2 ">
                                 <div class="shuffle icon2">
@@ -703,6 +835,13 @@
                                     value="50">
                                 <p id="current-value"></p>
                                 <img id="volume-icon" src="/img/icon/volume.png" alt="Volume Icon">
+                            </div>
+                            <div class="shareModal2">
+                                <div class="shareModal2-inner">
+                                    <a href="#"><img class='vk' src="/img/icon/vk.png" alt=""></a>
+                                    <a href="#"><img class='telegramm' src="/img/icon/telegramm.png" alt=""></a>
+                                    <a href="#"><img class='TikTok' src="/img/icon/tiktok.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -754,7 +893,7 @@
                                             <div class='subs-item'>
                                                 <a class='social' href="">
                                                     <img src="/img/icon/youtube.png" alt="">
-                                                    <div class="telegramm">Youtube</div>
+                                                    <div class="youtube ">Youtube</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -762,7 +901,7 @@
                                             <div class='subs-item'>
                                                 <a class='social' href="">
                                                     <img src="/img/icon/vk.png" alt="">
-                                                    <div class="telegramm">Vk</div>
+                                                    <div class="vk ">Vk</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -770,7 +909,7 @@
                                             <div class='subs-item'>
                                                 <a class='social' href="">
                                                     <img src="/img/icon/tiktok.png" alt="">
-                                                    <div class="telegramm">TikTok</div>
+                                                    <div class="tiktok ">TikTok</div>
                                                 </a>
                                             </div>
                                         </div>
@@ -836,6 +975,15 @@
     <script src='/js/FooterLangSocial.js'></script>
     <script src='/js/likes.js'></script>
     <script src='/js/AudioPlayer.js'></script>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
