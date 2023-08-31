@@ -18,7 +18,10 @@
     border: 3px solid tomato;
     border-radius: 5px;
     padding: 10px;
+    position: relative;
 }
+ 
+
 .newMusic:hover .p-b_block__inner {
     opacity: 0.5;
     transition: 1s;
@@ -27,7 +30,16 @@
     padding:5px;
     background-color:rgb(12, 144, 226);
 }
-
- 
-  
+.icon-block{
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 15%;
+}
+.shuffle{
+    width: 35px;
+}
+#adds{
+    width: 40px;
+}
  
