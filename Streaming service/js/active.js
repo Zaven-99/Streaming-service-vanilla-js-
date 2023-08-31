@@ -17,13 +17,11 @@ function active(selector) {
   let menuNav = document.querySelectorAll(selector);
   menuNav.forEach((item) => {
     item.addEventListener("click", (e) => {
-       
       menuNav.forEach((item) => {
         item.classList.remove("active1");
       });
 
-     
-      item.classList.add("active1");
+      item.classList.toggle("active1");
     });
   });
 }
