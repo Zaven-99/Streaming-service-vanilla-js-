@@ -1,0 +1,170 @@
+.icon2{
+    width: 30px;
+    cursor: pointer;
+    
+}
+.interesting-inner{
+    display: flex;
+    gap: 50px;
+}
+.icon2:not(:last-child){
+    border-radius: 25px;
+}
+.icons{
+    display: flex;
+    gap: 25px;
+    align-items:center;
+    margin-top: 100px;
+}
+.play{
+    padding-left: 50px;
+    padding-right: 65px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: tomato;
+}
+.prefer{
+    padding-left: 50px;
+    padding-right: 65px;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+}
+.listen{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+    
+}
+.likes{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: end;
+    
+}
+
+.icon2:hover{
+    opacity: .5;
+    transition: 1s;
+}
+.album-title:first-child{
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-align:start;
+    opacity: .5;
+}
+.album-title:nth-child(2){
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 35px;
+    text-align:start;
+}
+.album-title:nth-child(3){
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align:start;
+}
+
+
+/*AudioPlayer*/
+
+
+.AudioPlayer{
+    width: 1200px;
+    height: 150px;
+    border: 1px solid hsla(0,0%,100%,.95);
+    position: fixed;
+    bottom: 0px;
+    background-color:hsla(0,0%,100%,.95);
+    display: flex;
+}
+.AudioPlayer-inner{
+    display: flex;
+    padding-left: 50px;
+}
+ 
+
+.btn-block{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+ 
+.pause-button{
+    display: none;
+}
+.button-items{
+    width: 30px;
+    opacity: .5;
+}
+.button-items:hover{
+    opacity: 1;
+    transition: 1s;
+}
+.album-img{
+    width: 70px;
+}
+.nowPlaying-album{
+    display: flex;
+    align-items:center;
+}
+.nowPlaying{
+    display: flex;
+    align-items:center;
+    margin-left:50px
+}
+.nowPlaying-name{
+    margin-left: 50px;
+}
+.song_name a{
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align:start;
+    margin-bottom: 10px;
+}
+.artist-nickName a{
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align:start;
+}
+ .add{
+    width: 40px;
+ }
+ 
+.block-for_icons_inner{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left:50px;
+}
+.block-for_icons_inner2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left:250px;
+}
+.block-for_icons{
+    display: flex;
+    justify-content: space-between;
+}
+.chart-wrap{
+    margin-top: 50px;
+}
+ 
+ 
